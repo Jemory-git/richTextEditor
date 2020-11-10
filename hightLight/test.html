@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./highLight.css">
+</head>
+
+<body>
+    <script src="./highLight.js"></script>
+    <div id="main" style="height: 700px; font-size: 24px;">
+        <pre>
+        <code class="sql">
+select 1 as ID, '张三' AS NAME, '2019-01-01' AS birthday FROM dual UNION ALL 
+SELECT 2 AS ID, '李四' AS NAME, '2019-02-01' AS birthday FROM dual UNION ALL 
+SELECT 3 AS ID, '王五' AS NAME, '2019-03-01' AS birthday FROM dual 
+ORDER BY id
+</code>
+    </pre>
+    </div>
+    <script>
+        hljs.initHighlighting();
+    </script>
+</body>
+
+</html>
